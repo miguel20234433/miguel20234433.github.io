@@ -1,0 +1,125 @@
+.product-container{
+    padding: 10em 10em;
+    display: flex;
+    place-content: center;
+    
+}
+
+.section-two-image{
+    height: 100%;
+   display: flex;
+   align-items: center; /*Vertical alignment*/
+   justify-content: center;  /*Horizontal alignment*/
+   padding-left: 100px;
+}
+
+.section-two-image img{
+    position: relative;
+    width: clamp(25rem, 40vw, 45rem);
+    height: 50%;
+    border-radius: 5%;
+}
+
+.product-heading{
+    font-weight: 700;
+    position: relative;
+    font-size: clamp(1rem, 14vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(51, 62, 72);
+}
+
+.product-subtext{
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: initial;
+}
+
+.product-list{
+    background-color: rgb(243, 245, 247);
+    padding: 5em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3,320px);
+    place-content: center;
+    grid-gap: 30px 60px;
+}
+
+.product-grid > div {
+    background: radial-gradient(100% 100% at center top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 99%);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 10px;
+    height: 450px;
+    width: 350px;
+    padding: 2em 2em;
+
+}
+
+.product-icon{
+    display: block;
+    background-size: 65px;
+    width: 65px;
+    height: 65px;
+}
+
+.product-header{
+    font-weight: bold;
+    font-size: clamp(1rem, 12vw, 2rem);
+    color: rgb(51, 62, 72);
+}
+
+.product-cards > *{
+    margin-bottom: 20px;
+}
+
+.product-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#button-product{
+    margin-top: unset;
+    justify-content: unset;
+}
+
+.product-heading-highlight{
+    font-weight: 700;
+    position: relative;
+    font-size: clamp(1rem, 12vw, 2.5rem);
+    color: rgb(51, 62, 72);
+    padding-bottom: 5rem;
+}
+
+.product-subtext-highlight{
+    font-weight: initial;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+@media (max-width: 1105px){
+    .product-heading{
+        padding-top: 3em;
+        align-self: center;
+    }
+    .product-container{
+        flex-direction: column;
+        padding: unset;
+    }
+
+    .section-two-image{
+        padding-left: unset;
+    }
+    .product-grid{
+        grid-template-columns: repeat(2,320px);
+    }
+}
+
+@media (max-width: 768px){
+    .product-grid{
+        grid-template-columns: repeat(1,335px);
+    }
+}

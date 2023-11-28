@@ -1,0 +1,151 @@
+.row {
+    display: flex;
+    /* background-color: red; */
+}
+
+.column {
+    flex: 50%;
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+
+}
+
+.container-1 {
+    background: rgb(255, 255, 255);
+}
+
+/* Paragraph */
+.section-one-text{
+    margin: 15em 1% 0% 12%;
+    color: rgb(51, 62, 72);
+    width: 55%;
+}
+.section-one-text-name{
+    letter-spacing: 0.1em;
+    color: #dc143c;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    line-height: 50px;
+}
+
+.section-one-heading{
+    font-weight: 700;
+    position: relative;
+    font-size: clamp(1rem, 14vw, 2.5rem);
+}
+
+
+.section-one-subtext{
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.section-one-tooltip{
+    clear: left;
+    display: flex;
+    color: rgba(51, 62, 72, 0.50);
+    align-items: center;
+    gap: 5px;
+    padding-top: 5px;
+}
+.tooltip-icon{
+    display: block;
+    background-image: url(public/tooltip.png);
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+/*
+   BUTTON STYLING
+*/
+.button-container {
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.btn {
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: clamp(5em, 12em + 5vw, 20em);
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+    color: rgb(51, 62, 72);
+    background: none;
+    border: none;
+    span {
+        transition: all 0.3s;
+        transform: scale(1, 1);
+    } 
+    
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-one::before {
+    left: 4px;
+    z-index: 1;
+
+    opacity: 0;
+    background: #dc143c27;
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    transition: all 0.3s;
+    border: 1px solid #dc143cc0;
+}
+
+.btn-one:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+@media (max-width: 520px){
+    .button-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1105px){
+    .section-one-text{
+        width: 100%;
+        text-align: center;
+        padding-left: unset;
+    }
+
+    .button-container{
+        width: 100%;
+    }
+
+    .section-one-tooltip{
+        justify-content: center;
+    }
+}

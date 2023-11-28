@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100;300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="firstsectiondesign.css">
+  <link rel="stylesheet" href="secondsectiondesign.css">
+  <link rel="stylesheet" href="thirdsectiondesign.css">
+  <link rel="stylesheet" href="fourthsectiondesign.css">
+  <link rel="stylesheet" href="fifthsectiondesign.css">
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="client-carousel.css">
+  <link rel="stylesheet" href="footer.css">
+  <!-- Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="navbar.js" async defer></script>
+  <script src="carousel.js" async defer></script>
+  <script src="client-carousel.js" async defer></script>
+  <script src="transition.js" async defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar-scroll">
+  <div class="navbar-container container">
+    <input type="checkbox" name="" id="" href="#/">
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+    <ul class="menu-items" id="clickHandler">
+      <li><a href="index.html" class="nav-hover">Home</a></li>
+      <li><a href="about.html" class="nav-hover">About</a></li>
+      <li><a href="product.html" class="nav-hover">Products</a></li>
+      <li><a href="blog.html" class="nav-hover">Blogs</a></li>
+      <li><a href="#contactUs" class="nav-hover">Contact Us</a></li>
+      <li><button class="nav-button" style="order:3" id="nav-button" onclick="window.location.href = 'quote.html';">Get a Quote</button></li>
+    </ul>
+    <a href="index.html"><img src="public/aia-logo.png" class="logo"></a>
+
+
+  </div>
+</nav>
+
+<!-- SECTION 1 -->
+<div class="row">
+  <div class="section-one-text" style="order:1">
+    <strong class="section-one-text-name">TAN JOU SERN</strong>
+    <p class="section-one-heading">
+      <span>
+        Life Insurance</span> </br> that secures </br> your Future.
+    </p>
+    </br>
+    </br>
+    <p class="section-one-subtext">Understanding Insurance Essentials: Navigating the Basics of Coverage, Policies,
+      and Peace of Mind.</p>
+    <div class="button-container">
+      <div class="btn btn-one">
+        <span>Get a Quote</span>
+      </div>
+      <div class="btn btn-one">
+        <span>Contact Us</span>
+      </div>
+    </div>
+
+    <div class="section-one-tooltip"><span class='tooltip-icon'></span>Starting from RM100</div>
+  </div>
+  <div class="slideshowContainer" style="order:2">
+
+    <!-- Replace the image 'src' with the images in your project.
+          Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
+    <img class="imageSlides" src="https://picsum.photos/680/400">
+    <img class="imageSlides" src="https://picsum.photos/700/400">
+    <img class="imageSlides" src="https://picsum.photos/690/400">
+
+    <!-- I would recommend to replace these 'span' elements with 'img' files
+          for each the left and right arrow that fits your project, and size accordingly.
+          I've shown 'span' elements because I didn't want to upload files. -->
+    <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+    <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+
+    <div class="slideshowCircles">
+      <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+          Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
+      <span class="circle dot"></span>
+      <span class="circle"></span>
+      <span class="circle"></span>
+    </div>
+
+  </div>
+</div>
+<!-- SECTION 2 -->
+<div class="row">
+  <div class="section-two-text" style="order:2">
+    <strong class="section-one-text-name">MONEY BACK</strong>
+    <p class="section-one-heading">
+      <span>
+        Get Insured.</span> </br>Get Wealth Bonus.
+    </p>
+    </br>
+    </br>
+    <p class="section-one-subtext">Up to 100% of every payment is matched into a benefit that tracks the market like a
+      real investment. Get insurance that helps create wealth for your future.</p>
+    <div class="button-container">
+      <div class="btn btn-one">
+        <span>About Wealth Bonus</span>
+      </div>
+    </div>
+  </div>
+  <div class="section-two-image" style="order:1">
+    <img src="public/cashback.jpg">
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="row" style="background-color: rgb(243, 245, 247);">
+  <ul class="benefit-list" style="order:1">
+    <li><span class='benefit-icon'
+        style="background-image: url(public/icons/medical-card-icon.png);"></span><strong>Medical Card
+      </strong><span class='arrow-icon'></span></li>
+    <li><span class='benefit-icon'
+        style="background-image: url(public/icons/life-insurance-icon.png);"></span><strong>Life
+        Insurance</strong><span class='arrow-icon'></span></li>
+    <li><span class='benefit-icon' style="background-image: url(public/icons/illness-icon.png);"></span><strong>Critical
+        Illness
+        Coverage</strong><span class='arrow-icon'></span></li>
+    <li><span class='benefit-icon' style="background-image: url(public/icons/savings-icon.png);"></span><strong>Savings
+        and Wealth
+        Management</strong><span class='arrow-icon'></span></li>
+    <li><span class='benefit-icon'
+        style="background-image: url(public/icons/retirement-icon.png);"></span><strong>Retirement and
+        Pension Plans</strong><span class='arrow-icon'></span></li>
+  </ul>
+
+  <div class="section-three-text" style="order:2">
+    <strong class="section-one-text-name">PRODUCTS</strong>
+    <p class="section-one-heading">
+      Simpler, smarter, more rewarding cover.
+    </p>
+    </br>
+    </br>
+    <p class="section-one-subtext">We think life insurance should be more about living. So we’ve designed our products
+      to protect and create wealth while you're alive.</p>
+    <div class="button-container" onclick="window.location.href = 'product.html';">
+      <div class="btn btn-one">
+        <span>View Our Products</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SECTION 4  -->
+<div class="row">
+  <div class="section-four-text" style="order:2">
+    <strong class="section-one-text-name">CLIENT REVIEWS</strong>
+    <p class="section-one-heading">
+      <span>Don't just take our word for it.</span>
+    </p>
+    <!-- CLIENT CAROUSEL -->
+    <div class='cards-wrapper'>
+      <div class='cards'>
+        <button class='card card1' tabindex="-1">
+          <div class="rating-wrapper">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>I would like to offer my apologies for canceling the policy. I wish to express my profound appreciation
+            to your employee who called me. She was so professional, calm, kind, well-spoken, articulate, sought to
+            understand, and very respectful, she really knew her job description.</p>
+          <h4>John<br /><span>14 July 2023</span></h4>
+        </button>
+
+        <button class='card card2' tabindex="-1">
+          <div class="rating-wrapper">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>It was my first claim, so far I am impressed with the quick assistance, communication was good.</p>
+          <h4>Alice<br /><span>3 April 2023</span></h4>
+        </button>
+
+        <button class='card card3' tabindex="-1">
+          <div class="rating-wrapper">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>At first I was not happy due to I have been paying for Life Cover for more than 2yrs with no documents.
+            All thanks to Zama for keeping your promise. Documents received and all is in order I’m now a hapy client.
+            Thank you so much for going above and beyond.</p>
+          <h4>Robert<br /><span>7 November 2023</span></h4>
+        </button>
+
+        <button class='card card4' tabindex="-1">
+          <div class="rating-wrapper">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+          </div>
+          <p>I am pleased with the assistance however we can still improve on the telephonical service. Keep up the
+            good work</p>
+          <h4>Amelia<br /><span>21 May 2023</span></h4>
+        </button>
+
+        <button class='card card5' tabindex="-1">
+          <div class="rating-wrapper">
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star checked"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Excellent customer service. Thank you. You can improve by educating your consultants more about your
+            products so that you don't have any more cases like this one.</p>
+          <h4>Dawson<br /><span>15 June 2023</span></h4>
+        </button>
+
+      </div>
+      <button class="arrow-btn arrow-btn-prev" tabindex="0">
+        <svg viewBox="0 0 256 512">
+          <path
+            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+        </svg>
+      </button>
+      <button class="arrow-btn arrow-btn-next" tabindex="0">
+        <svg viewBox="0 0 256 512">
+          <path
+            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- SECTION 5 -->
+<div class="row" style="flex-direction: column; background-color: rgb(243, 245, 247);">
+  <div class="section-five-text" style="order:0">
+    <p class="section-one-heading">
+      <span>Featured Infographics</span>
+    </p>
+  </div>
+  <div class="infographic-container">
+    <figure class="snip1529">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample13.jpg" alt="pr-sample13" />
+      <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+      <figcaption>
+        <h3>An Abstract Post Heading</h3>
+        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample21.jpg"
+        alt="pr-sample21" />
+      <div class="date"><span class="day">17</span><span class="month">May</span></div>
+      <figcaption>
+        <h3>Down with this sort of thing</h3>
+        <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg"
+        alt="pr-sample23" />
+      <div class="date"><span class="day">08</span><span class="month">June</span></div>
+      <figcaption>
+        <h3>The World Ended Yesterday</h3>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1529">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample13.jpg" alt="pr-sample13" />
+      <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+      <figcaption>
+        <h3>An Abstract Post Heading</h3>
+        <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample21.jpg"
+        alt="pr-sample21" />
+      <div class="date"><span class="day">17</span><span class="month">May</span></div>
+      <figcaption>
+        <h3>Down with this sort of thing</h3>
+        <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+    <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg"
+        alt="pr-sample23" />
+      <div class="date"><span class="day">08</span><span class="month">June</span></div>
+      <figcaption>
+        <h3>The World Ended Yesterday</h3>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <div class="hover"><i class="ion-android-open"></i></div>
+      <a href="#"></a>
+    </figure>
+  </div>
+  <a class="section-five-footer" href="blog.html">
+    <strong>Show More</strong><span class='right-icon'></span></i>
+  </a>
+</div>
+<!-- FOOTER -->
+<footer-component></footer-component>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="firstsectiondesign.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+
+    <script src="navbar.js" async defer></script>
+</head>
+
+<body>
+ <!-- NAVBAR -->
+<nav class="navbar" id="navbar-scroll">
+    <div class="navbar-container container">
+      <input type="checkbox" name="" id="" href="#/">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items" id="clickHandler">
+        <li><a href="index.html" class="nav-hover">Home</a></li>
+        <li><a href="about.html" class="nav-hover">About</a></li>
+        <li><a href="product.html" class="nav-hover">Products</a></li>
+        <li><a href="blog.html" class="nav-hover">Blogs</a></li>
+        <li><a href="#contactUs" class="nav-hover">Contact Us</a></li>
+        <li><button class="nav-button" style="order:3" id="nav-button" onclick="window.location.href = 'quote.html';">Get a Quote</button></li>
+      </ul>
+      <a href="index.html"><img src="public/aia-logo.png" class="logo"></a>
+  
+  
+    </div>
+  </nav>
+    <div class="product-container">
+        <p class="product-heading">
+            <span>
+                World class cover</span> that rewards you </br> with wealth.
+            <span class="product-subtext"></br>We've built our Life Insurance products from </br>the ground up to both
+                protect you and reward you.</span>
+        </p>
+
+        <div class="section-two-image">
+            <img src="public/product-highlight.png">
+        </div>
+    </div>
+    <div class="product-list">
+        <div class="product-heading-highlight"> 
+            <strong class="section-one-text-name">PRODUCTS</strong>
+            <p>Get immediate cover. All online. In minutes.</p>
+            <p class="product-subtext-highlight">Life insurance that covers you today, and creates wealth for tomorrow.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-cards"><span class='product-icon'
+                    style="background-image: url(public/icons/medical-card-icon.png);"></span>
+                <p class="product-header">Medical Card</p>
+                <p class="product-subtext">Medical Card that doubles after 3 years at no extra cost.</p>
+                <div class="button-container" id="button-product">
+                    <div class="btn btn-one">
+                        <span>See details</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards"><span class='product-icon'
+                    style="background-image: url(public/icons/life-insurance-icon.png);"></span>
+                <p class="product-header">Life Insurance</p>
+                <p class="product-subtext">Medical Card that doubles after 3 years at no extra cost.</p>
+                <div class="button-container" id="button-product">
+                    <div class="btn btn-one">
+                        <span>See details</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards"><span class='product-icon'
+                    style="background-image: url(public/icons/illness-icon.png);"></span>
+                <p class="product-header">Critical Illness Coverage</p>
+                <p class="product-subtext">Medical Card that doubles after 3 years at no extra cost.</p>
+                <div class="button-container" id="button-product">
+                    <div class="btn btn-one">
+                        <span>See details</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards"><span class='product-icon'
+                    style="background-image: url(public/icons/savings-icon.png);"></span>
+                <p class="product-header">Savings and Wealth Management</p>
+                <p class="product-subtext">Medical Card that doubles after 3 years at no extra cost.</p>
+                <div class="button-container" id="button-product">
+                    <div class="btn btn-one">
+                        <span>See details</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards"><span class='product-icon'
+                    style="background-image: url(public/icons/retirement-icon.png);"></span>
+                <p class="product-header">Retirement and Pension Plans</p>
+                <p class="product-subtext">Medical Card that doubles after 3 years at no extra cost.</p>
+                <div class="button-container" id="button-product">
+                    <div class="btn btn-one">
+                        <span>See details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>
+
+</html>

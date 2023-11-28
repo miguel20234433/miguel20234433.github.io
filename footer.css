@@ -1,0 +1,298 @@
+.new_footer_area {
+    background: #fbfbfd;
+    
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-section{
+    width: 40vw;
+    background-color: #dc143c;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.contact-section{
+    padding-top: 120px;
+    text-align: center;
+    color: whitesmoke;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    list-style: none;
+    margin-bottom: 11px;
+    text-decoration: none;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+  
+    font-size: 24px;
+    background-size: 100%;
+} 
+
+.new_footer_top .f_social_icon a:nth-child(1) {
+    background-image: url(../js-project-2/public/icons/insta.png);
+} 
+
+.new_footer_top .f_social_icon a:nth-child(2) {
+    background-image: url(../js-project-2/public/icons/fb.png);
+} 
+.new_footer_top .f_social_icon a:nth-child(3) {
+    background-image: url(../js-project-2/public/icons/wa.png);
+} 
+
+.f_social_icon{
+    display: flex;
+}
+
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 45px;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+.footer-main-container{
+    width: 90%;
+    margin: auto;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 16vw);
+    justify-content: center;
+}
+
+div .footer-facebook{
+    background-size: 25px;
+    width: 35px;
+    height: 35px;
+    color: #263b5e;
+    display: inline-block;
+    background-image: url(../js-project-2/public/icons/illness-icon.png);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+.form__field {
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid whitesmoke;
+    outline: 0;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    width: 80%;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    width: 100%;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #dc143c, #ebebeb);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #dc143c;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  #marketingButton{
+    justify-content: left;
+    justify-content: center;
+  }
+
+  #funnel.btn{
+    width: 80% !important;
+    color:whitesmoke;
+  }
+
+  #funnel.btn::before{
+    background: #ffffff2a;
+  }
+
+  #funnel.btn::after{
+    background: #ffffff27;
+    border: 1px solid #ffffff70;
+
+  }
+@media (max-width: 1105px){
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1023px){
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-section{
+        width: unset;
+    }
+    .contact-section{
+        padding-bottom: 120px;
+    }
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container > * {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
